@@ -1,0 +1,233 @@
+<html>
+<html lang="en">
+	<!--Header Area Begins-->
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="windsor, rentals, belfast">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>Apt 12, 83 Lower Windsor Avenue, Belfast, Antrim, BT9 7DX </title>
+	</head>
+	
+<body>
+<div class="container-fluid"><!--Top container-->
+	<!--Top level Nav-->
+	<div class="row">
+		<div class="col topnav">
+				<a href="../index.html">Home</a>
+				<a class="active" href="../Rentals.html">Rentals</a>
+				<a href="../Buy.html">Buy</a>
+				<a href="../About.html">About Us</a>
+				<a href="../Contact Us.html">Contact Us</a>
+		</div>
+	</div>
+	<div class="row">
+
+				<h1> <br> Apt 12, 83 Lower Windsor Avenue, Belfast, Antrim, BT9 7DX <hr> </h1>
+				<br>
+</div>
+	</div>	
+	
+<div class="row">
+	<div class="col-8">
+	<!-- The Slideshow container -->
+	<div class="slideshow-container">
+
+	  <div class="mySlides fade"> 
+	<div class="numbertext">1 of 5</div>
+	<img src="https://d298eb512462606839b1-1af0ada05e3663b8de6c1f3bc78d2a95.ssl.cf3.rackcdn.com/173064186.jpg"  class="slide-img" alt="2 bed penthouse apartment situated inside a large manor building">
+  </div>
+  
+  <div class="mySlides fade"> 
+	<div class="numbertext">2 of 5</div>
+	<img src="https://d298eb512462606839b1-1af0ada05e3663b8de6c1f3bc78d2a95.ssl.cf3.rackcdn.com/173076823.jpg" class="slide-img" alt="Modern and moderate size kitchen with dining table">
+	<div class="text">Fully Fitted Modern Kitchen</div>
+  </div>
+    
+  <div class="mySlides fade"> 
+	<div class="numbertext">3 of 5</div>
+	<img src="https://d298eb512462606839b1-1af0ada05e3663b8de6c1f3bc78d2a95.ssl.cf3.rackcdn.com/173076822.jpg" class="slide-img" alt="Fully furnished stylish black livingroom">
+	<div class="text">Fully Furnished Living Room</div>
+  </div>
+    
+  <div class="mySlides fade"> 
+	<div class="numbertext">4 of 5</div>
+	<img src="https://d298eb512462606839b1-1af0ada05e3663b8de6c1f3bc78d2a95.ssl.cf3.rackcdn.com/WebEdge_UPM_76788903.jpg" class="slide-img" alt="Very large private balcony with chest high metal fence">
+	<div class="text">Private Balcony</div>
+  </div>
+    
+  <div class="mySlides fade"> 
+	<div class="numbertext">5 of 5</div>
+	<img src="https://d298eb512462606839b1-1af0ada05e3663b8de6c1f3bc78d2a95.ssl.cf3.rackcdn.com/173076824.jpg" class="slide-img" alt="Large bedroom with large double bed and extra furnishings">
+	<div class="text">Very Large Double Bedroom</div>
+  </div>
+
+<!-- Next and Forward buttons -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+
+
+	<!--Dots/Circles -->
+	<div style="text-align:center;padding:10px 0;">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+		
+	</div>
+	</div>
+	<div class="col-3">
+		<h3>To enquire about this property please fill in the form below.</h3>
+		<form id="inputForm">
+		  <div class="form-group">
+			<label for="fullName">Full Name</label>
+			<input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+		  </div>
+		  <div class="form-group">
+			<label for="pgemail">Email address</label>
+			<input type="email" class="form-control" name="email" id="pgemail" aria-describedby="emailHelp" placeholder="Email address" onkeyup="emailtype()" required>
+		  </div>
+		  <div class="form-group">
+			<label for="phNumber">Phone Number</label>
+			<input type="tel" class="form-control" name="phoneNumber" id="phNumber" placeholder="Telephone" onkeyup="phonenumber()" required>
+		  </div>
+		  <div class="form-group">
+			<br>
+			<p>Please select your preferred method of contact:</p>
+			  <div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="selEmail" value="email">
+				  <label class="form-check-label" for="selEmail">Email</label>
+				</div>
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="selPhone" value="phone">
+				  <label class="form-check-label" for="selPhone">Phone</label>
+				</div>
+			</div>
+		  <button type="submit" class="btn btn-primary" id="nw_submit">Submit</button>
+		</form>
+		<script>
+
+			function validateEmail(email) {
+  			var emailValid = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])+\.+[a-zA-Z0-9.]{3,5}$/;
+  			return emailValid.test(email);
+			}
+
+			function validatePhone(phone) {
+				var phoneValid = /^\d{10,13}$/;
+				return phoneValid.test(phone);
+			}
+
+			function emailtype() {
+				var result = $("#pgemail");
+				var email = $("#pgemail").val();
+				result.text();
+
+			  if (validateEmail(email)) {
+				result.css("color", "green");
+			} else {
+				result.css("color", "red");
+				}
+			}
+
+			function phonenumber() {
+				var result = $("#phNumber");
+				var phone = $("#phNumber").val();
+				result.text();
+
+  			  if (validatePhone(phone)) {
+				result.css("color", "green");
+        	} else {
+				result.css("color", "red");
+        		}
+			}
+
+
+			function validate() {
+			  var result = $("#pgemail");
+			  var email = $("#pgemail").val();
+			  result.text();
+
+			  if (validateEmail(email)) {
+			    result.text(email + " is valid");
+				result.css("color", "green");
+				inputForm.submit();
+				alert("Form Submitted!");
+				return true;
+			  } else {
+			    result.text(email + " is not valid");
+				result.css("color", "red");
+				alert("Email is invalid");
+			  }
+			}
+			</script>
+	</div>
+</div>
+<hr class="desc-hold">
+	<div class="row desc">
+		<div class="col"></div>
+			<div class="col-8">
+				<h4>Apt 12, 83 Lower Windsor Avenue, Belfast, Antrim, BT9 7DX</h4>
+				<h5>Property details</h5>
+				<hr>
+					<ul> <li>£1000 pm</li><br> 
+					<li>Penthouse Apartment</li><br> 
+					<li>2 Decent Sized Bedrooms</li><br> 
+					<li>12 Months lease</li><br> 
+					<li>Available Now!</li><br> 
+					<li>GFCH</li><br> 
+					<li>Excellent Location</li><br> 
+					<li>White Suite Bathroom</li><br> 
+					<li>Private Parking Space</li><br> 
+					<hr>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.263095633192!2d-5.95347388394429!3d54.58173808915829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861089236aea067%3A0x7bf83918a4379007!2s83+Lower+Windsor+Ave%2C+Belfast+BT9+7DX!5e0!3m2!1sen!2suk!4v1565353898808!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</ul>
+					<br> 
+</div>
+		<div class="col"></div>
+	</div>
+<hr class="desc-hold">
+<!--footer-->
+	<div class="row foot-row">	
+		<div class="col"></div>
+		<div class="col-3">
+		<hr class="foot-col">
+		<p> &copy; Copyright 2019 Windsor Estate Agents. </p>
+		</div>
+		<div class="col-3">
+		<hr class="foot-col">
+		<ul style="list-style-type:none;"> 
+					<li><a class="foot-lnk" href="../sitemap.xml">Sitemap</a></li>
+					<li>Terms & Conditions</li>
+				</ul>
+				<p>Sign up to our newsletter:</p>
+				<div class="input-group mb-3">
+				  <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+				  <div class="input-group-append">
+					<button class="btn btn-outline-secondary nw-submit" type="button" id="nw_submit">Submit</button>
+				  </div>
+				</div>
+		</div>
+		<div class="col-3">
+		<hr class="foot-col">
+			<ul style="list-style-type:none;"> 
+				<li>Social links:</li>
+				<li><a class="soc-link" href=""><img src="../media/facebook-logo-button.png"/></a>
+				<a class="soc-link" href=""><img src="../media/linkedin-logo-button.png"/></a>
+				<a class="soc-link" href=""><img src="../media/twitter-logo-button.png"/></a></li>
+			</ul>
+		</div>
+		<div class="col"></div>
+	</div>
+</div>
+</body>
+
+<script src="../js/win_script.js"></script>
+</html>
+
+<!--NOTE: ALL IMAGES OWNED BY PROPERTYNEWS.COM-->
+	

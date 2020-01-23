@@ -1,0 +1,136 @@
+<html>
+<html lang="en">
+	<!--Header Area Begins-->
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="windsor, rentals, belfast">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>Contact info for  Windsor Estate Agents</title>
+	</head>
+	<!--Header Area Ends-->
+	
+	<!--
+	J.Smyth - notes - 
+	Bootstrap has been externally loaded, Davids initial structure has been changed, same layout different classes and id's, file paths and URLs have been updated
+	-->
+<body>
+<div class="container-fluid"><!--Top container-->
+	<!--Top level Nav-->
+	<div class="row">
+		<div class="col topnav">
+				<a href="index.html">Home</a>
+				<a href="Rentals.html">Rentals</a>
+				<a href="Buy.html">Buy</a>
+				<a href="About.html">About Us</a>
+				<a class="active" href="Contact Us.html">Contact Us</a>
+		</div>
+	</div>
+	
+	<!--Parallax - IMAGE SOURCE: www.centralbelfastapartments.com-->
+	<div class="parallax">
+	<a  href="#main"><button class="skip-to">Skip &darr;</button></a>
+	</div>
+	
+				 
+				 <!--Main Area Begins-->
+	<div class="row" id="main">
+	<div class="col">
+				<h1> <br> CONTACT US <hr> </h1>
+		<h3>To enquire about this property please fill in the form below.</h3>
+			<form id="inputForm">
+			  <div class="form-group">
+				<label for="fullName">Full Name</label>
+				<input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+			  </div>
+			  <div class="form-group">
+				<label for="pgemail">Email address</label>
+				<input type="email" class="form-control" id="pgemail" aria-describedby="emailHelp" placeholder="Email address" required>
+			  </div>
+			  <div class="form-group">
+				<label for="phNumber">Phone Number</label>
+				<input type="text" class="form-control" id="phNumber" placeholder="Telephone">
+			  </div>
+			  <div class="form-group">
+				<br>
+				<p>Please select your preferred method of contact:</p>
+				  <div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="selEmail" value="email">
+					  <label class="form-check-label" for="selEmail">Email</label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="selPhone" value="phone">
+					  <label class="form-check-label" for="selPhone">Phone</label>
+					</div>
+				</div>
+			  <button type="submit" class="btn btn-primary" id="nw_submit">Submit</button>
+			</form>
+			<script>
+				const inputForm = document.getElementById('inputForm');
+				const emailField = document.getElementById('pgemail');
+				const okButton = document.getElementById('nw_submit');
+				  
+				emailField.addEventListener('keyup', function (event) {
+				  isValidEmail = emailField.checkValidity();
+				  
+				  if ( isValidEmail ) {
+					okButton.disabled = false;
+				  } else {
+					okButton.disabled = true;
+				  }
+				});
+				  
+				okButton.addEventListener('click', function (event) {
+				  signUpForm.submit();
+				});
+			</script>
+			<br><br>
+		<p> Call into our local office at: <br> 109 Windsor Park, Lisburn Road,<br> Belfast, Northern Ireland.<br>BT97XX.	</p>
+		<p> Phone: 02890123456 <br> Email: contact@windsorbelfast.com </p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.5809304757665!2d-5.946056148304218!3d54.577396348001535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486108eb30cadc3f%3A0x14778a6acb6c8459!2s109+Windsor+Park%2C+Belfast+BT9+6FT!5e0!3m2!1sen!2suk!4v1564225693809!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<hr>
+	</div>
+	
+	</div>
+	<!--Main Area Ends-->
+<!--footer-->
+	<div class="row foot-row">	
+		<div class="col"></div>
+		<div class="col-3">
+		<hr class="foot-col">
+		<p> &copy; Copyright 2019 Windsor Estate Agents. </p>
+		</div>
+		<div class="col-3">
+		<hr class="foot-col">
+		<ul style="list-style-type:none;"> 
+					<li><a class="foot-lnk" href="sitemap.xml">Sitemap</a></li>
+					<li>Terms & Conditions</li>
+				</ul>
+				<p>Sign up to our newsletter:</p>
+				<div class="input-group mb-3">
+				  <input type="text" class="form-control" id="pgemail" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+				  <div class="input-group-append">
+					<button class="btn btn-outline-secondary nw-submit" type="button" id="nw_submit">Submit</button>
+				  </div>
+				</div>
+		</div>
+		<div class="col-3">
+		<hr class="foot-col">
+			<ul style="list-style-type:none;"> 
+				<li>Social links:</li>
+				<li><a class="soc-link" href="https://www.facebook.com"><img src="media/facebook-logo-button.png"/></a>
+				<a class="soc-link" href="https://www.linkedin.com"><img src="media/linkedin-logo-button.png"/></a>
+				<a class="soc-link" href="https://www.twitter.com"><img src="media/twitter-logo-button.png"/></a></li>
+			</ul>
+		</div>
+		<div class="col"></div>
+	</div>
+</div>
+</body>
+</html>
+
+<!--NOTE: ALL IMAGES OWNED BY PROPERTYNEWS.COM-->
+	
